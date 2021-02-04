@@ -156,12 +156,12 @@ def user_stats(df, city):
         gen = df.groupby(['Gender'])['Gender'].count()
         print(gen)
         # TO DO: Display earliest, most recent, and most common year of birth
-        earliest = sorted(df.groupby(['Birth Year'])['Birth Year'])[0][0]
-        most_recent = sorted(df.groupby(['Birth Year'])['Birth Year'], reverse=True)[0][0]
-        most_common_year = df['Birth Year'].mode()[0]
-        print('The earliest year of birth is: ', earliest)
-        print('The most recent year of birth is: ', most_recent)
-        print('The most common year of birth is: ', most_common_year)
+        e = sorted(df.groupby(['Birth Year'])['Birth Year'])[0][0]
+        mr = sorted(df.groupby(['Birth Year'])['Birth Year'], reverse=True)[0][0]
+        mc = df['Birth Year'].mode()[0]
+        print('The earliest year of birth is: ', e)
+        print('The most recent year of birth is: ', mr)
+        print('The most common year of birth is: ', mc)
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
