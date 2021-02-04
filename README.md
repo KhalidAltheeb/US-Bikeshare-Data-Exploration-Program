@@ -22,7 +22,7 @@ In this project, _Python_ is used to explore data related to _bike share systems
 
     - https://github.com/richardkalehoff
 
-* Dhaval Patel (software engineer)
+* Dhaval Patel (Software Engineer)
 
     - https://www.youtube.com/playlist?list=PLeo1K3hjS3usJuxZZUBdjAcilgfQHkRzW
 
@@ -30,7 +30,7 @@ In this project, _Python_ is used to explore data related to _bike share systems
 
     - https://github.com/junolee
 
-* Yash Motwani (data enthusiast)
+* Yash Motwani (Data Enthusiast)
 
     - https://github.com/YashMotwani
 
