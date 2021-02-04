@@ -35,9 +35,9 @@ In this project, _Python_ is used to explore data related to _bike share systems
     - https://github.com/YashMotwani
 
 ## **Softwares needed:**
-    * _Python 3, NumPy_, and _Pandas_ installed using _Anaconda_.
-    * A text editor, like _Sublime_ or _Atom_.
-    * A terminal application (_Terminal_ on Mac and Linux or _Cygwin_ on Windows).
+* _Python 3, NumPy_, and _Pandas_ installed using _Anaconda_.
+* A text editor, like _Sublime_ or _Atom_.
+* A terminal application (_Terminal_ on Mac and Linux or _Cygwin_ on Windows).
 
 ## **Code explained in Detail:**
 ### **How the program works:**
