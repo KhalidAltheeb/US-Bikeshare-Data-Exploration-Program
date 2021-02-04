@@ -33,3 +33,8 @@ washington.csv
 * Yash Motwani (data enthusiast)
 
     - https://github.com/YashMotwani
+
+## Softwares needed:
+    * Python 3, NumPy, and Pandas installed using Anaconda.
+    * A text editor, like Sublime or Atom..
+    * A terminal application (Terminal on Mac and Linux or Cygwin on Windows).
