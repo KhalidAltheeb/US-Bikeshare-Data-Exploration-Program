@@ -65,7 +65,7 @@ def load_data(city, month, day):
 
     # extract month and day of week from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
-    df['day_of_week'] = df['Start Time'].dt.weekday_name
+    df['day_name'] = df['Start Time'].dt.day_name()
 
 
     # filter by month if applicable
@@ -80,7 +80,7 @@ def load_data(city, month, day):
     # filter by day of week if applicable
     if day != 'all':
         # filter by day of week to create the new dataframe
-        df = df[df['day_of_week'] == day.title()]
+        df = df[df['day_name'] == day.title()]
 
     return df
 
@@ -95,7 +95,7 @@ def time_stats(df):
     print('The most common month is: ', df['month'].mode()[0], '\n')
 
     # TO DO: display the most common day of week
-    print('The most commen day of the week is: ', df['day_of_week'].mode()[0], '\n')
+    print('The most commen day of the week is: ', df['day_name'].mode()[0], '\n')
 
     # TO DO: display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
@@ -156,12 +156,12 @@ def user_stats(df, city):
         gen = df.groupby(['Gender'])['Gender'].count()
         print(gen)
         # TO DO: Display earliest, most recent, and most common year of birth
-        earliest = sorted(df.groupby(['Birth Year'])['Birth Year'])[0][0]
-        most_recent = sorted(df.groupby(['Birth Year'])['Birth Year'], reverse=True)[0][0]
-        most_common_year = df['Birth Year'].mode()[0]
-        print('The earliest year of birth is: ', earliest)
-        print('The most recent year of birth is: ', most_recent)
-        print('The most common year of birth is: ', most_common_year)
+        e = sorted(df.groupby(['Birth Year'])['Birth Year'])[0][0]
+        mr = sorted(df.groupby(['Birth Year'])['Birth Year'], reverse=True)[0][0]
+        mc = df['Birth Year'].mode()[0]
+        print('The earliest year of birth is: ', e)
+        print('The most recent year of birth is: ', mr)
+        print('The most common year of birth is: ', mc)
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
